@@ -1,1 +1,1 @@
-# sampleapp
+Sample applications for Nomad demo.
