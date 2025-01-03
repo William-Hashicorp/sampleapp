@@ -1,0 +1,9 @@
+<service>
+  <id>SampleWindowsService</id>
+  <name>Sample Windows Service</name>
+  <description>This is a sample Windows service for testing.</description>
+  <executable>powershell.exe</executable>
+  <arguments>-Command "& { while ($true) { Add-Content -Path 'C:\Temp\service-log.txt' -Value 'Hello, World!'; Start-Sleep -Seconds 60 } }"</arguments>
+  <logpath>C:\Temp</logpath>
+  <logmode>append</logmode>
+</service>
